@@ -1,0 +1,31 @@
+<section class="view">
+    <div class="cancel">
+        <mat-icon mat-dialog-close>close</mat-icon>
+    </div>
+    <div class="parent">
+        <div class="left">
+            <img src={{img}} alt="" class="img-here">
+        </div>
+        <div class="right">
+            <span class="desc">{{cate}}</span>
+            <span class="name">{{name}}</span>
+            <span class="price">{{price | currency}}</span>
+            <span class="description">{{desc}}</span>
+            <hr class="hori">
+            <span class="categ"><span class="opaci">Categories:</span> {{cate}}</span>
+            <div class="btns">
+                <div class="plusminus">
+                    <div class="minus design" (click)="onMinus()">-</div>
+                    <div class="num design" >{{quantity}}</div>
+                    <div class="plus design" (click)="onPlus()">+</div>
+                </div>
+                <button class="btn" (click)="onCart()">ADD TO CART
+                    <ngx-ui-loader [loaderId]="'loader-02'"></ngx-ui-loader>
+                <mat-icon class="check" *ngIf="isCheck==true">check</mat-icon>
+                </button>
+                <span class="view-cart" *ngIf="isCheck==true" (click)="openCart()" mat-dialog-close>View Cart</span>
+                <span class="view-cart col-red" *ngIf="isAdded==true" mat-dialog-close>Already Added</span>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <section class="navbar">
+        <div class="container">
+            <div class="first-content">
+                <span class="text">Free Express Shipping on all orders with all duties included</span>
+            </div>
+            <div class="second-content">
+                <div class="left">
+                    <div class="left-logo">
+                        <mat-icon class="menu" (click)="onMenu()">menu</mat-icon>
+                    <div class="logo">
+                        <img src="../../assets/site-logo.svg " alt="" class="icon" routerLink="/">
+                    </div>
+                    </div>
+                    <div class="left-content">
+                        <span class="text-content" routerLink="/men">MEN</span>
+                        <span class="text-content" routerLink="/women">WOMEN</span>
+                        <span class="text-content" routerLink="/collection">COLLECTION</span>
+                        <span class="text-content" routerLink="/lookbook">LOOKBOOK</span>
+                        <span class="text-content mar-right" routerLink="/sale">SALE</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <span class="text-content" routerLink="/story">OUR STORY</span>
+                    <span class="text-content" routerLink="contact">CONTACT</span>
+                    <div class="logo-icon">
+                        <div class="cart-sys">
+                            <img src="../../assets/cart.svg" alt="" class="icon" height="22px" routerLink="/cart" (click)="onCart()">
+                         <!-- <div class="count">
+                            <span class="num-here">{{cnt}}</span>
+                        </div>  -->
+                        </div>
+                        <img src="../../assets/user.svg" alt="" class="icon admin" height="22px" >
+                    </div>
+                </div>
+                <div class="pop-up" *ngIf="isMenu==true">
+                    <div class="pop-content">
+                        <mat-icon class="close" (click)="onMenu()">close</mat-icon>
+                        <mat-icon class="user">person</mat-icon>
+                        <hr class="horiz">
+                        <span class="nav-heading" routerLink="/" (click)="onMenu()">Home</span>
+                        <hr class="horiz">
+                        <span class="nav-heading" routerLink="/collection" (click)="onMenu()">Shop Everything</span>
+                        <hr class="horiz">
+                        <span class="nav-heading" routerLink="/lookbook" (click)="onMenu()">Lookbook</span>
+                        <hr class="horiz">
+                        <span class="nav-heading" routerLink="/sale" (click)="onMenu()">Sale</span>
+                        <hr class="horiz">
+                        <span class="nav-heading" routerLink="/story" (click)="onMenu()">Story</span>
+                        <hr class="horiz">
+                        <span class="nav-heading" routerLink="/contact" (click)="onMenu()">Contact</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

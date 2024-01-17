@@ -1,0 +1,69 @@
+<section class="collection">
+    <div class="parent">
+        <div class="header">
+            <span class="heading">{{heading}}</span>
+            <div class="filter">
+                <div class="btn-here">
+                    <button class="filter-show" (click)="onFilter()">
+                        <mat-icon class="menu">menu</mat-icon>
+                        FILTER SHOES</button>
+                    <span class="showing">Showing All {{numberData}} Results</span>
+                </div>
+                <mat-form-field >
+                    <mat-label>Default Sorting</mat-label>
+                    <mat-select [(value)]="selected" >
+                      <mat-option (click)="popular()" class="list" value="Sort By Popularity">Sort By Popularity</mat-option>
+                      <mat-option (click)="l2h()" class="list" value="Sort By Low To High">Sort By Price: Low To High</mat-option>
+                      <mat-option (click)="h2l()" class="list" value="Sort By High To Low">Sort By Price: High To Low</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            
+        </div>
+        <div class="downside">
+            <div class="cards">
+                <div class="card" *ngFor="let ele of dataArray3">
+                    <div class="img-section">
+                        <img src={{ele.imgUrl}} alt="" class="card-img">
+                        <span class="img-footer" (click)="onView(ele.id)">Quick View</span>
+                        <span class="sale">Sale!</span>
+                    </div>
+                    <span class="card-heading">{{ele.name}}</span>
+                    <span class="price">{{ele.price | currency}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up" *ngIf="isFiltered==true">
+        <div class="content">
+            <div class="cancel-div">
+            <mat-icon class="cross" (click)="closePopUp()">close</mat-icon>
+            </div>
+            <div class="search-div">
+                <input type="text" class="search" placeholder="Search Products...">
+            <mat-icon class="search-icon">search</mat-icon>
+            </div>
+            <div class="filter-div">
+                <span class="heading">Filter By</span>
+                <div class="filter-content">
+                    <div class="men">
+                        <span class="men-heading" (click)="onFilter2('ALL')">ALL<span class="num">(15)</span></span>
+                    </div>
+                    <div class="men">
+                        <span class="men-heading" (click)="onFilter2('Men')">Men<span class="num">(6)</span></span>
+                        <span class="running">Running <span class="num">(4)</span></span>
+                        <span class="sneaker running">Sneaker <span class="num">(2)</span></span>
+                    </div>
+                    <div class="Women men">
+                        <span class="men-heading" (click)="onFilter2('Women')">Women <span class="num">(9)</span></span>
+                        <span class="running">Running <span class="num">(7)</span></span>
+                        <span class="sneaker running">Sneaker <span class="num">(1)</span></span>
+                        <span class="sneaker running">Training <span class="num">(1)</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-betterpeople />
+<app-footer />

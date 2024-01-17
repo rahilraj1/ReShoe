@@ -1,0 +1,130 @@
+@light-bg: #F1F1EF;
+@poppin-ff: 'Poppins', sans-serif;
+@inter-ff: 'Inter', sans-serif;
+@btn-hover: #262B2C;
+.parent-section
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    .child-section
+    {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        .upside
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+            .heading
+            {
+                font-family: @poppin-ff;
+                font-size:2.5vw;
+                font-weight: bold;
+                margin-bottom: 35px;
+            }
+        }
+        .downside
+        {
+            width: 100%;
+            margin-bottom: 55px;
+            margin-top: 35px;
+            .cards
+            {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .card
+                {
+                    width: 28%;
+                    border:1px solid #E4E6E7;
+                    padding: 32px 16px;
+                    margin: 0px 12px;
+                    .content
+                    {
+                        font-family: @poppin-ff;
+                        font-weight: bold;
+                        color:@btn-hover;
+                        font-size: 1.1vw;
+                        line-height:4vh;
+                    }
+                    .details
+                    {
+                        margin-top: 18px;
+                        display: flex;
+                        align-items: center;
+                        .avatar
+                        {
+                            border-radius: 55px;
+                            margin-right: 12px;
+                        }
+                        .name
+                        {
+                            font-family:@poppin-ff;
+                            color:@btn-hover;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+        .footer
+        {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 55px;
+            .text
+            {
+                font-family: @poppin-ff;
+                color:#262B2C;
+                opacity: 0.4;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+
+@media(max-width:768px)
+{
+   .parent-section
+   {
+    width: 100% !important;
+      .child-section
+      {
+        width: 100% !important;
+         .upside
+    {
+        .heading
+        {
+            font-size: 22px !important;
+            margin-bottom: 12px;
+        }
+    }
+    .downside
+    {
+        width: 100% !important;
+        .cards
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card
+            {
+                width: 80% !important;
+                margin: 12px 0px;
+                .content
+                {
+                    font-size: 14px;
+                }
+                .name
+                {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+      }
+   }
+}

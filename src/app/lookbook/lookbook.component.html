@@ -1,0 +1,24 @@
+<section class="lookbook">
+    <div class="parent">
+        <div class="heading">
+            <span class="headline">Lookbook</span>
+        </div>
+        <div class="containers">
+            <div class="content" *ngFor="let ele of dataArray">
+                <img src={{ele.imgUrl}} alt="" class="img-here">
+                <div class="text-content">
+                    <div class="left">
+                        <span class="heading">{{ele.heading}}</span>
+                    </div>
+                    <div class="right">
+                        <span class="text">
+                            Elementum donec leo vulputate sit proin suspendisse malesuada neque proin gravida ut platea vitae duis hac hac vel id ipsum ultricies ut faucibus ultrices.</span>
+                            <span class="shop-now">Shop Now</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-betterpeople />
+<app-footer />

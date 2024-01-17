@@ -1,0 +1,58 @@
+<section class="cart2">
+    <div class="parent">
+        <div class="heading">
+            <span class="headline">Cart</span>
+        </div>
+        <div class="main-content">
+            <div class="left">
+                <div class="nav-mini">
+                    <span class="product design">Product</span>
+                    <span class="price design">Price</span>
+                    <span class="quantity design">Quantity</span>
+                    <span class="subtotal design">Subtotal</span>
+                </div>
+                <div class="content" *ngFor="let ele of dataArray">
+                    <div class="product-content">
+                        <img src={{ele.imgUrl}} alt="" class="prod-img">
+                        <span class="heading">{{ele.name}}</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">{{ele.price | currency}}</span>
+                    </div>
+                    <div class="product-quantity">
+                        <div class="plusminus">
+                            <div class="minus design" (click)="onMinus(ele.id)">-</div>
+                            <div class="num design" >{{ele.cnt}}</div>
+                            <div class="plus design" (click)="onPlus(ele.id)">+</div>
+                        </div>
+                    </div>
+                    <div class="product-subtotal">
+                        <span class="price">{{ele.price*cnt | currency}}</span>
+                        <mat-icon class="cancel-icon" (click)="onClose(ele.id)">close</mat-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="heading">
+                    <span class="head-line">Cart Totals</span>
+                </div>
+                <div class="content">
+                    <div class="subtotal">
+                        <span class="heading-here">Subtotal</span>
+                        <span class="price">{{totalBill | currency}}</span>
+                    </div>
+                    <hr class="horiz">
+                    <div class="subtotal">
+                        <span class="heading-here">Total</span>
+                        <span class="price">{{totalBill | currency}}</span>
+                    </div>
+                    <hr class="horiz">
+                    <span class="coupon">Have a coupon?</span>
+                    <button class="checkout">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-betterpeople />
+<app-footer />

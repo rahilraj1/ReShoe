@@ -1,0 +1,159 @@
+{
+  "bestSeller": [
+    {
+      "id": 3,
+      "imgUrl": "../../assets/seller4.jpg",
+      "name": "Men’s Black Running",
+      "gender": "Men",
+      "category": "Men, SportShoe",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 109.9
+    },
+    {
+      "id": 1,
+      "imgUrl": "../../assets/seller1.jpg",
+      "name": "Women’s Light Green Running",
+      "gender": "Women",
+      "category": "Women, SportShoe",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 89.9
+    },
+    {
+      "id": 2,
+      "imgUrl": "../../assets/seller7.jpg",
+      "name": "Women’s Light Orange Running",
+      "gender": "Women",
+      "category": "Women, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 99.9
+    },
+    {
+      "id": 4,
+      "imgUrl": "../../assets/seller12.jpg",
+      "name": "Men’s Moonstone Sneaker",
+      "gender": "Men",
+      "category": "Men, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 199.9
+    },
+    {
+      "id": 5,
+      "imgUrl": "../../assets/seller10.jpg",
+      "name": "Women’s Choco City Run",
+      "gender": "Women",
+      "category": "Women, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 169.9
+    },
+    {
+      "id": 6,
+      "imgUrl": "../../assets/seller6.jpg",
+      "name": "Men’s Navy Running",
+      "gender": "Men",
+      "category": "Men, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 299.9
+    }
+  ],
+  "newArrival": [
+    {
+      "id": 7,
+      "imgUrl": "../../assets/seller1.jpg",
+      "name": "Women’s Light Green Running",
+      "gender": "Women",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "category": "Women, Sneakers",
+      "price": 81.9
+    },
+    {
+      "id": 8,
+      "imgUrl": "../../assets/seller7.jpg",
+      "name": "Women’s Light Orange Running",
+      "gender": "Women",
+      "category": "Women, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 109.9
+    },
+    {
+      "id": 9,
+      "imgUrl": "../../assets/seller4.jpg",
+      "name": "Men’s Black Running",
+      "gender": "Men",
+      "category": "Men, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 111.9
+    },
+    {
+      "id": 10,
+      "imgUrl": "../../assets/seller12.jpg",
+      "name": "Men’s Moonstone Sneaker",
+      "gender": "Men",
+      "category": "Men, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 129.9
+    },
+    {
+      "id": 11,
+      "imgUrl": "../../assets/seller10.jpg",
+      "name": "Women’s Choco City Run",
+      "gender": "Women",
+      "category": "Women, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 59.9
+    },
+    {
+      "id": 12,
+      "imgUrl": "../../assets/seller6.jpg",
+      "name": "Men’s Navy Running",
+      "gender": "Men",
+      "category": "Men, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 399.9
+    },
+    {
+      "id": 13,
+      "imgUrl": "../../assets/seller11.jpg",
+      "name": "Women’s Candy City Run",
+      "gender": "Women",
+      "category": "Women, Sneakers",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 699.9
+    },
+    {
+      "id": 14,
+      "imgUrl": "../../assets/seller3.jpg",
+      "name": "Women’s Peach Training",
+      "gender": "Women",
+      "category": "Women, SportShoe",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 101.9
+    },
+    {
+      "id": 15,
+      "imgUrl": "../../assets/seller8.jpg",
+      "name": "Women’s Meant Sneaker",
+      "gender": "Women",
+      "category": "Women, SportShoe",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 150.9
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "imgUrl": "../../assets/seller1.jpg",
+      "name": "Women’s Light Green Running",
+      "gender": "Women",
+      "category": "Women, SportShoe",
+      "description": "Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.",
+      "price": 89.9
+    }
+  ],
+  "messages": [
+    {
+      "name": "Rahil",
+      "email": "rahlR@gmail.com",
+      "msg": "I want to buy shoes for kids"
+    }
+  ]
+}

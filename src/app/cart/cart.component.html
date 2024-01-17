@@ -1,0 +1,52 @@
+<section class="cart">
+    <div class="parent">
+        <div class="upside">
+            <div class="div-content">
+                <span class="heading">Shopping Cart</span>
+                <div class="cancel">
+                <img src="../../assets/cross.svg" alt="" class="cross" height="18px" (click)="onCross()" mat-dialog-close>
+                </div>
+            </div>
+            <hr class="hori-line">
+        </div>
+        <div class="products">
+            <span class="heading" *ngIf="isEmpty==true">No Products In Cart.</span>
+            <div class="product-list">
+               <div class="content" *ngFor="let ele of cartData">
+                  <div class="left">
+                        <img src={{ele.imgUrl}} alt="" class="product-img">
+                        <div class="btn">
+                            <span class="heading-2">{{ele.name}}</span>
+                            <div class="plusminus">
+                                <div class="minus design" (click)="onMinus()">-</div>
+                                <div class="num design" >{{quantity}}</div>
+                                <div class="plus design" (click)="onPlus()">+</div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="right">
+                     <div class="content-right">
+                        <div class="cross">
+                            <img src="../../assets/cross.svg" alt="" class="cross-img" height="12px" (click)="onCancel(ele.id)">
+                        </div>
+                        <span class="price">{{ele.price | currency}}</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="bill">
+            <hr class="horiz">
+            <div class="content">
+                <span class="heading-2">Subtotal: </span>
+                <span class="price">{{totalBill | currency}}</span>
+            </div>
+            <hr class="horiz">
+        </div>
+        <div class="btns">
+            <button class="buy" *ngIf="isEmpty==true" routerLink="/collection" mat-dialog-close>Continue Shopping</button>
+            <button class="buy" *ngIf="isEmpty==false" routerLink="/maincart" mat-dialog-close>View Cart</button>
+            <button class="buy buy2" *ngIf="isEmpty==false" routerLink="/maincart" mat-dialog-close>Checkout</button>
+        </div>
+    </div>
+</section>

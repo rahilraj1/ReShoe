@@ -1,0 +1,237 @@
+@light-bg: #F1F1EF;
+@sans-ff: sans-serif;
+
+.navbar {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .first-content {
+            width: 100%;
+            background-color: @light-bg;
+            padding: 16px 0px;
+            text-align: center;
+
+            .text {
+                text-align: center;
+                color: black;
+                opacity: 0.6;
+                font-family: sans-serif;
+            }
+        }
+
+        .second-content {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 0px;
+
+            .left {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 60%;
+                position: relative;
+                .menu
+                {
+                    display: none;
+                    cursor: pointer;
+                    @media(max-width:1025px)
+                    {
+                        display:flex !important;
+                    }
+                }
+                .left-logo
+                {
+                    width: 20%;
+                    .logo {
+                        width: 100%;
+                    .icon
+                    {
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+                @media(max-width:426px)
+                {
+                    width: 100% !important;
+                }
+                }
+
+                .left-content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 70%;
+                    transition: all 0.5s;
+                }
+                @media(max-width:426px)
+                {
+                    width: 80% !important;
+                    display: flex;
+                    align-items: center !important;
+                    .left-logo
+                    {
+                        display: flex;
+                        align-items: center !important;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 25%;
+                padding-left: 42px;
+
+                .logo-icon {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 25%;
+                    .cart-sys
+                    {
+                        position: relative;
+                        .count
+                        {
+                            position: absolute;
+                            background-color: black;
+                            padding:0px 6px;
+                            border-radius: 16px;
+                            top:-55%;
+                            right:-72%;
+                            .num-here
+                            {
+                                color:white;
+                                font-size: 12px;
+                                font-family: @sans-ff;
+                            }
+                        }
+                    }
+                    .icon
+                    {
+                        cursor: pointer;
+                    }
+                    .admin
+                    {
+                        display: none;
+                    }
+                }
+
+            }
+            .pop-up
+            {
+                position: absolute;
+                left: 0;
+                top: 0%;
+                width: 100vw;
+                height: 100vh;
+                background-color: white;
+                z-index: 12;
+                display: flex;
+                justify-content: center;
+                .pop-content
+                {
+                    width: 90%;
+                    margin-top: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    .close
+                    {
+                        width: 100%;
+                        display: flex;
+                        justify-content:flex-end !important;
+                        margin-bottom: 12px;
+                    }
+                    .horiz
+                    {
+                        margin: 12px 0px;
+                        color:#EAEAEA;
+                        opacity:0.15;
+                    }
+                    .nav-heading
+                    {
+                        font-size: 1.7vw;
+                        font-family: @sans-ff;
+                        cursor: pointer;
+                        opacity: 0.4;
+                        transition: all 0.5s;
+                        padding: 12px 0px;
+                        &:hover
+                        {
+                            opacity: 1;
+                        }
+                    }
+                }
+                @media(max-width:768px)
+                {
+                    .nav-heading
+                    {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.text-content {
+    font-family: @sans-ff;
+    opacity: 0.3;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    @media(max-width:1025px)
+    {
+        display: none;
+    }
+}
+.text-content:hover
+{
+    opacity: 1;
+}
+
+@media(max-width:1025px)
+{
+
+    .second-content
+    {
+        .left
+        {
+            width: 40% !important;
+            display: flex !important;
+            align-items: center !important;
+           .left-logo
+           {
+            display: flex !important;
+            align-items: center !important;
+            width: 100% !important;
+             .logo
+            {
+                width: 70% !important;
+                margin-left: 16px;
+                .icon
+                {
+                    width: 100%;
+                }
+            }
+           }
+        }
+        .right
+        {
+            display: flex;
+            justify-content:end !important;
+            .logo-icon
+            {
+                .cart-sys
+                {
+                }
+            }
+        }
+    }
+}

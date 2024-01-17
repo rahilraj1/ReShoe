@@ -1,0 +1,62 @@
+<section class="main">
+    <div class="parent">
+        <span class="heading">Contact</span>
+        <div class="upside-form">
+            <div class="left">
+                <div class="content-1 content1">
+                    <div class="heading">
+                        <mat-icon class="phone">phone_iphone</mat-icon>
+                        <span class="heading-text">Products & Order</span>
+                    </div>
+                    <div class="content">
+                        <span class="contact">(+1) 123-456-7890</span>
+                        <span class="avail">available 24/7</span>
+                    </div>
+                </div>
+                <hr class="horiz">
+                <div class="content-1 content2">
+                    <div class="heading">
+                        <mat-icon class="phone">phone_iphone</mat-icon>
+                        <span class="heading-text">Info & Enquiries</span>
+                    </div>
+                    <div class="content">
+                        <span class="contact">(+1) 123-456-7890</span>
+                        <span class="avail">available 24/7</span>
+                    </div>
+                </div>
+                <hr class="horiz">
+                <div class="content-1 content3">
+                    <div class="heading">
+                        <mat-icon class="phone">location_on</mat-icon>
+                        <span class="heading-text">Store Locator</span>
+                    </div>
+                    <div class="content">
+                        <span class="contact">Find our retail near you</span>                    </div>
+                </div>
+                <hr class="horiz">
+                <div class="stay content-1">
+                    <span class="heading">STAY IN TOUCH</span>
+                    <div class="stay-icons">
+                        <img src="../../assets/facebook.svg" alt="" class="icon" height="19px">
+                        <img src="../../assets/insta.svg" alt="" class="icon" height="19px">
+                        <img src="../../assets/pinterest.svg" alt="" class="icon" height="19px">
+                    </div>
+                </div>
+            </div>
+            <hr class="verti">
+            <div class="right">
+                <div class="right-form">
+                    <label for="" class="form-name">Name</label>
+                    <input type="text" class="input-val" [(ngModel)]="name">
+                    <label for="" class="form-name">Email</label>
+                    <input type="text" class="input-val" [(ngModel)]="email">
+                    <label for="" class="form-name">Comment Or Message</label>
+                    <textarea type="text" class="input-val" rows="6" [(ngModel)]="msg"></textarea>
+                    <button class="submit-btn" (click)="onSubmit()">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-betterpeople />
+<app-footer />

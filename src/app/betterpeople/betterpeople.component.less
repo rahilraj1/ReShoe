@@ -1,0 +1,201 @@
+@light-bg: #F1F1EF;
+@poppin-ff: 'Poppins', sans-serif;
+@inter-ff: 'Inter', sans-serif;
+@btn-hover: #262B2C;
+
+.parent
+{
+    width: 100%;
+    margin-bottom: 55px;
+    .img-container
+    {
+        position: relative;
+        width: 100%;
+        .img-here
+        {
+            width: 100%;
+        }
+        .text-content
+        {
+            position: absolute;
+            top: 26%;
+            left: 22%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .heading
+            {
+                font-family: @poppin-ff;
+                color:white;
+                font-weight: bolder;
+                font-size: 3.6vw;
+                margin-bottom: 28px;
+                @media(max-width:1025px)
+                {
+                    margin-bottom: 14px;
+                }
+            }
+            .para
+            {
+                font-family: @inter-ff;
+                color:white;
+                font-size: 1.2vw;
+                font-weight: 500;
+                text-align: center;
+                margin-top: 18px;
+                margin-bottom: 16px;
+                @media(max-width:1025px)
+                {
+                    margin-top: 10px;
+                    margin-bottom: 12px;
+                }
+                @media(max-width:768px)
+                {
+                    margin: 6px 0px;
+                }
+            }
+            .btns
+            {
+                display: flex;justify-content: space-between;
+                margin: 18px 0px;
+                .btn{
+                    padding:13px 26px;
+                    font-family: @poppin-ff;
+                    font-weight: bold;
+                    font-size: 1vw;
+                    border:none;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover
+                    {
+                        background-color: @btn-hover;
+                        color:white;
+                    }
+                }
+                .btn-2
+                {
+                    margin-left: 8px;
+                }
+                @media(max-width:1025px)
+                {
+                    margin: 12px 0px;
+                }
+            }
+        }
+    }
+    @media(max-width:768px)
+    {
+        .img-container
+        {
+            height: 50vh !important;
+            .img-here
+            {
+                height: 50vh !important;
+            }
+            .text-content
+            {
+                left: 15%;
+                .heading
+            {
+                font-size: 20px !important;
+            }
+            .para
+            {
+                font-size: 14px !important; 
+            }
+            .btns
+            {
+                .btn
+                {
+                    font-size: 12px;
+                }
+            }
+            }
+        }
+    }
+    @media(max-width:426px)
+    {
+        .text-content
+        {
+            left: 0% !important;
+        }
+    }
+}
+
+.second-parent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .container
+    {
+        width: 80%;
+        display: flex;
+        justify-content:space-around;
+        padding: 26px 0px;
+        .first
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 18%;
+            .text
+            {
+                font-family: @poppin-ff;
+                color:@btn-hover;
+                font-size: 1.2vw;
+                font-weight: bold;
+            }
+        }
+        .horiz
+        {
+            opacity: 0.5;
+        }
+        .second
+        {
+            width: 14%;
+        }
+        
+    }
+    .verti
+        {
+            height: 0%;
+            width: 80%;
+            opacity: 0.4;
+            margin-top: 45px;
+        }
+}
+@media(max-width:768px)
+{
+    .second-parent
+    {
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .first
+            {
+                width: 80% !important;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 14px;
+                .icon
+                {
+                    width: 15% !important;
+                }
+                .text{
+                    font-size: 16px;
+                    width: 60% !important;
+                }
+            }
+            .horiz
+            {
+                width: 80% !important;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

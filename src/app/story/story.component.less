@@ -1,0 +1,189 @@
+@color-heading:#262b2c;
+@poppin-ff:'Poppins', sans-serif;
+@inter-ff: 'Inter', sans-serif;
+
+.story
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    .parent
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+        .upper
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 18px 0px;
+            .heading
+            {
+                font-family: VT323, monospace;
+                font-weight:bold;
+                font-size: 5vw;
+                color:@color-heading;
+                margin-bottom: 18px;
+            }
+            .heading-para
+            {
+                font-size: 2.5vw;
+                line-height: 6.5vh;
+                width: 60%;
+                text-align: center;
+                margin-top: 35px;
+            }
+        }
+        .mid
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;;
+            .img-here
+            {
+                width: 80%;
+            }
+            .mid-content
+            {
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                margin-top: 25px;
+                .left
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .icon
+                    {
+                        color:#6E7051;
+                        margin: 12px 0px;
+                    }
+                    .heading
+                    {
+                        color:@color-heading;
+                        font-family: @poppin-ff;
+                        font-weight: bold;
+                        font-size: 1.4vw;
+                        margin: 12px 0px;
+                        margin-right: 8px;
+                    }
+                    .content
+                    {
+                        font-family: @inter-ff;
+                        font-size: 1.2vw;
+                        line-height: 5vh;
+                        text-align: center;
+                        opacity: 0.4;
+                        width: 75%;
+                        margin-bottom: 28px;
+                    }
+                }
+            }
+        }
+        .downside
+        {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .content
+            {
+                width: 90%;
+                background-color: #F1F1EF;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .mission
+                {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 99px 0px;
+                    .heading
+                    {
+                       font-family: @poppin-ff;
+                       color:@color-heading;
+                       font-weight: bold;
+                       font-size: 26px;
+                       width: 10%;
+                       margin-top: 6px;
+                    }
+                    .text-div
+                    {
+                        width: 60%;
+                        font-family: @inter-ff;
+                        font-size: 18px;
+                        line-height: 28px;
+                        color:@color-heading;
+                        opacity: 0.4;
+                        display: flex;
+                        flex-direction: column;
+                        .content-2
+                        {
+                            margin-top: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px)
+{
+    .mid-content
+    {
+        display: flex;
+        flex-direction: column;
+        .heading
+        {
+            font-size: 18px !important;
+        }
+        .content
+        {
+            font-size: 14px !important;
+        }
+    }
+    .downside
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .mission
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .heading
+                    {
+                        margin-bottom: 16px !important;
+                    }
+                .text-div
+                {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80% !important;
+                    align-items: center;
+                    .content
+                    {
+                        text-align: center !important;
+                    }
+                    .content-2
+                    {
+                        margin-top: 15px;
+                        text-align: center !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<section class="best-seller">
+    <div class="parent">
+        <div class="upside">
+            <span class="heading">New Arrivals</span>
+            <span class="link-btn">VIEW ALL NEW ARRIVALS</span>
+        </div>
+        <div class="downside">
+            <div class="cards">
+                <div class="card" *ngFor="let ele of dataArray">
+                    <div class="img-section">
+                        <img src={{ele.imgUrl}} alt="" class="card-img">
+                        <span class="img-footer" (click)="onView(ele.id)">Quick View</span>
+                        <span class="sale">Sale!</span>
+                    </div>
+                    <span class="card-heading">{{ele.name}}</span>
+                    <span class="price">{{ele.price | currency}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

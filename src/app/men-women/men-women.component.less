@@ -1,0 +1,101 @@
+@light-bg: #F1F1EF;
+@poppin-ff: 'Poppins', sans-serif;
+@inter-ff: 'Inter', sans-serif;
+@btn-hover: #262B2C;
+
+.parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 55px;
+
+    .child {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+
+        .container {
+            width: 49%;
+
+            .img-div {
+                width: 100%;
+                padding: 0;
+                position: relative;
+
+                .img-here {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    top: 40%;
+                    left: 40%;
+
+                    .heading {
+                        color: white;
+                        font-family: @poppin-ff;
+                        font-weight: bold;
+                        font-size: 2.2vw;
+                    }
+
+                    .shop {
+                        padding: 10px 22px;
+                        color: white;
+                        font-family: @inter-ff;
+                        font-weight: 500;
+                        background-color: transparent;
+                        cursor: pointer;
+                        border: 2px solid white;
+                        margin-top: 18px;
+                        transition: all 0.5s;
+                        font-size: 1vw;
+                        &:hover {
+                            background-color: white;
+                            color:black
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px)
+{
+    .parent
+    {
+        width: 100% !important;
+        .child
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100% !important;
+            .container
+            {
+                .img-div
+                {
+                    .content
+                    {
+                        top: 35% !important;
+                        left: 36% !important;
+                    }
+                }
+                width: 100% !important;
+                margin-bottom: 24px;
+                .heading
+                {
+                    font-size: 18px !important;
+                }
+                .shop
+                {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}
